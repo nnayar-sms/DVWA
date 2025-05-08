@@ -15,4 +15,4 @@ jobs:
     if: (github.actor != 'dependabot[bot]')
     steps:
       - uses: actions/checkout@v4
-      - run: semgrep ci --include=vulnerabilities/exec/ --verbose --sast
+      - run: semgrep ci --include=vulnerabilities/exec/ --verbose --code
